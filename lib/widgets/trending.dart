@@ -16,7 +16,7 @@ class Trending extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Trending now',
+            'Trending',
             style: TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.bold),
           ),
           Container(
