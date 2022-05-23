@@ -1,16 +1,12 @@
-# api_calls
-<!-- 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 -->
-A new Flutter project.
 
-## Getting Started
+# Netflix clone
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![download](https://user-images.githubusercontent.com/93697313/169527962-c87d9cfd-0afd-45b2-9db0-26421c5006f7.png )
+![download](https://user-images.githubusercontent.com/93697313/169528032-dece4b66-3647-486b-84f8-8c1dc6ef55b7.png)
+![download](https://user-images.githubusercontent.com/93697313/169528093-2d0d6c33-5756-485e-bcab-5c83121db94a.png)
+![download](https://user-images.githubusercontent.com/93697313/169528155-2fdaa732-ed01-4412-801e-e8bf5d7afa3d.png)
+![download](https://user-images.githubusercontent.com/93697313/169528200-d7a2c4a0-023c-4acb-8a90-9bc89dfc5df3.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
