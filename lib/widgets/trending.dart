@@ -44,6 +44,9 @@ class Trending extends StatelessWidget {
                               onTap: () {
                                 
                                   showModalBottomSheet(
+                                    
+                                    enableDrag: false,
+                                    isScrollControlled: false,
                                     backgroundColor: Colors.transparent,
                     context: context,
                     builder: (context) {
@@ -116,10 +119,16 @@ class Trending extends StatelessWidget {
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.only(left: 10),
-                                            child: Text(
-                                            '${docs[i]['seasons']}'+' Season(s)',
+                                            child: docs[i]['seasons'] > 1 ? Text(
+                                            '${docs[i]['seasons']}'+' Seasons',
                                               style: TextStyle(color: Color.fromARGB(255, 187, 180, 180), fontSize: 15, fontWeight: FontWeight.bold),
-                                            ),
+                                            ) : docs[i]['seasons'] == 1 ? Text(
+                                            '${docs[i]['seasons']}'+' Season',
+                                              style: TextStyle(color: Color.fromARGB(255, 187, 180, 180), fontSize: 15, fontWeight: FontWeight.bold),
+                                            ) :Text(
+                                            '${docs[i]['length']}',
+                                              style: TextStyle(color: Color.fromARGB(255, 187, 180, 180), fontSize: 15, fontWeight: FontWeight.bold),
+                                            ) 
                                           ),
                                         
                                       ],
@@ -128,12 +137,12 @@ class Trending extends StatelessWidget {
                                        padding: const EdgeInsets.only(top: 10),
                                        child: SizedBox(
                                          width: MediaQuery.of(context).size.width/1.5,
-                                         child: Flexible(
+                                         
                                            child: Text(
                                                 '${docs[i]['plot']}',
                                                   style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.normal),
                                                 ),
-                                         ),
+                                         
                                        ),
                                      ),
                                      ],
