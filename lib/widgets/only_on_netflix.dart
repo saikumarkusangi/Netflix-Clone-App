@@ -117,10 +117,16 @@ class Only_on_Netflix extends StatelessWidget {
                                           ),
                                           Padding(
                                             padding: const EdgeInsets.only(left: 10),
-                                            child: Text(
-                                            '${docs[i]['seasons']}'+' Season(s)',
+                                            child:docs[i]['seasons'] > 1 ? Text(
+                                            '${docs[i]['seasons']}'+' Seasons',
                                               style: TextStyle(color: Color.fromARGB(255, 187, 180, 180), fontSize: 15, fontWeight: FontWeight.bold),
-                                            ),
+                                            ) : docs[i]['seasons'] == 1 ? Text(
+                                            '${docs[i]['seasons']}'+' Season',
+                                              style: TextStyle(color: Color.fromARGB(255, 187, 180, 180), fontSize: 15, fontWeight: FontWeight.bold),
+                                            ) :Text(
+                                            '${docs[i]['length']}',
+                                              style: TextStyle(color: Color.fromARGB(255, 187, 180, 180), fontSize: 15, fontWeight: FontWeight.bold),
+                                            ) 
                                           ),
                                         
                                       ],

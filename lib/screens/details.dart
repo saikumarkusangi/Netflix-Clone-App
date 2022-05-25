@@ -1,5 +1,6 @@
 // final args = ModalRoute.of(context)!.settings.arguments as List;
 //
+import 'package:demo/main.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import 'package:flutter/material.dart';
 
@@ -24,8 +25,19 @@ class _DetailsState extends State<Details> {
       ),
     );
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.black),
+      appBar: AppBar(backgroundColor: Colors.black,
+      leading: new IconButton(
+    icon: new Icon(Icons.arrow_back),
+    onPressed: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => MyHomePage()),
+      );
+    },
+  ),
+      ),
       backgroundColor: Colors.black,
+      
       body: ListView(
         padding: EdgeInsets.only(top: 2),
         scrollDirection: Axis.vertical,
