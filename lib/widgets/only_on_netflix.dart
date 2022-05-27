@@ -135,11 +135,11 @@ class Only_on_Netflix extends StatelessWidget {
                                        padding: const EdgeInsets.only(top: 10),
                                        child: SizedBox(
                                          width: MediaQuery.of(context).size.width/1.5,
-                                         child: Flexible(
-                                           child: Text(
+                                         child: (
+                                            Text(
                                                 '${docs[i]['plot']}',
                                                   style: TextStyle(color: Colors.white, fontSize: 15, fontWeight: FontWeight.normal),
-                                                ),
+                                                )
                                          ),
                                        ),
                                      ),

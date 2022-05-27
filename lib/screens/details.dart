@@ -26,16 +26,12 @@ class _DetailsState extends State<Details> {
     );
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.black,
-      leading: new IconButton(
-    icon: new Icon(Icons.arrow_back),
-    onPressed: () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => MyHomePage()),
-      );
-    },
-  ),
-      ),
+      automaticallyImplyLeading: false,
+      leading: IconButton(onPressed: (){
+          Navigator.push(context,MaterialPageRoute (builder: (context) => MyHomePage(),));
+      }, icon: Icon(Icons.arrow_back)
+    
+      ),),
       backgroundColor: Colors.black,
       
       body: ListView(

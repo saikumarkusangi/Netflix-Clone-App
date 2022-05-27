@@ -101,6 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
       extendBodyBehindAppBar: true,
       // resizeToAvoidBottomInset: false,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         backgroundColor: Colors.black.withOpacity(0.5),
         elevation: 0,
         toolbarHeight: 100,
